@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Zyphos pagina web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="webPhotos/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contáctanos</h1>
+   
+</section>
+<!------------------Contacto-------------------->
+
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <span>
+                    <h5>Heroica Puebla de Zaragoza</h5>
+                    <p>Centro de Puebla</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>+52 999999999</h5>
+                    <p>Lunes a viernes, 8AM a 5PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>zyphos@ejemplo.com</h5>
+                    <p>Envíanos tu consulta</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Ingresa tu nombre" required>
+                <input type="email" name="email" placeholder="Ingresa tu dirección de correo electrónico" required>
+                <input type="text" name="subject" placeholder="Mensaje" required>
+                <textarea rows="8" name="message" placeholder="Mensaje"></textarea>
+                <button type="submit" class="hero-btn red-btn">Enviar</button>
+            </form>
+
+
+
+        </div>
+    </div>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120689.24528464531!2d-98.27458291394228!3d19.040028927487324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0bd5ebc7a3b%3A0x48a6461de494ad95!2sHeroica%20Puebla%20de%20Zaragoza%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1741394260000!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        
+</section>
+
+
+
+</section>
+
+        <!----------------------Footer--------------->
+<section class="footer">
+    <h4>Zyphos</h4>
+    <p>Lorem ipsum dolor sit amet consecte cum 
+        <br> animi numquam dolores modi dicta.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+</section>
+
+
+
+
+
+
+<!---JavaScript for Toggle Menu--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>

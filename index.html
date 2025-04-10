@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Zyphos pagina web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="webPhotos/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+
+<div class="text-box">
+    <h1>Paneles Solares</h1>
+    <p>Obtén paneles fotovoltaicos de lotes anteriores, 
+        <br>ahora más fácil que nunca.
+    </p>
+    <a href="" class="hero-btn">Ver Más</a>
+</div>     
+
+</section>
+
+<!---Servicios--->
+<section class="Servicios">
+    <h1>Servicios Disponibles</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repellendus est fugit minima quod, dolorem, 
+        ea eius voluptates suscipit sapiente!</p>
+    <div class="row">
+        <div class="serv-1">
+            <h3>Paneles</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Ut aliquam reprehenderit magni nemo? Voluptatibus 
+                consequatur accusamus porro ipsa laboriosam harum ullam 
+                omnis. Repellendus ut dignissimos consequuntur 
+                praesentium labore pariatur necessitatibus?</p>
+        </div>
+        <div class="serv-1">
+            <h3>Instalacion</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Ut aliquam reprehenderit magni nemo? Voluptatibus 
+                consequatur accusamus porro ipsa laboriosam harum ullam 
+                omnis. Repellendus ut dignissimos consequuntur 
+                praesentium labore pariatur necessitatibus?</p>
+        </div>
+        <div class="serv-1">
+            <h3>Diagramas</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Ut aliquam reprehenderit magni nemo? Voluptatibus 
+                consequatur accusamus porro ipsa laboriosam harum ullam 
+                omnis. Repellendus ut dignissimos consequuntur 
+                praesentium labore pariatur necessitatibus?</p>
+        </div>
+        
+    </div>
+
+
+</section>
+
+        <!---Footer--->
+<section class="footer">
+    <h4>Zyphos</h4>
+    <p>Lorem ipsum dolor sit amet consecte cum 
+        <br> animi numquam dolores modi dicta.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+</section>
+
+
+
+
+
+<!---JavaScript for Toggle Menu--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>
